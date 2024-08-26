@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encryptor created by Salvador Farias Torres for the Oracle Next Education course presented by Alura Latam" />
+    <title>Encryptor Alura Latam</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/05b9cb9391.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <div class="main__main-text">
+            <div class="main__main-text__logo">
+                <img src="./assets/Logo.png" alt="Alura Latam Logo" class="main__main-text__logo__logo-desktop">
+                <img src="./assets/Logo-mobile.png" alt="Alura Latam Logo" class="main__main-text__logo__logo-mobile">
+            </div>
+            <div class="main__main-text__textarea">
+                <textarea placeholder="Enter text here..."></textarea>
+            </div>
+            <div class="main__main-text__bottom">
+                <div class="main__main-text__bottom__icon">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <p class="main__main-text__bottom__icon__text">Only lowercase letters and no accents</p>
+                </div>
+                <div class="main__main-text__bottom__buttons">
+                    <button class="main__main-text__bottom_buttons__button-encrypt">Encrypt</button>
+                    <button class="main__main-text__bottom_buttons__button-decrypt">Decrypt</button>
+                </div>
+            </div>
+        </div>
+        <div id="default-view" class="main__encrypted-text">
+            <img src="./assets/Muñeco.png" alt="Boy with magnifying glass">
+            <h2 id="message-title" class="main__encrypted-text__title">No message was found</h2>
+            <p id="message-text" class="main__encrypted-text__paragraph">Enter the text you want to encrypt or decrypt.</p>
+        </div>
+        <div id="result-view" class="main__visual-encrypted-text hidden">
+            <p id="result-text" class="main__visual-encrypted-text__paragraph"></p>
+            <button id="copy-button">Copy</button>
+        </div>
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>

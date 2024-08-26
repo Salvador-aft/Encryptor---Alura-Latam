@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@font-face {
+    font-family: "Inter", sans-serif;
+    src: url(https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap) format("truetype");
+}
+
+
+body {
+    background-color: #E5E5E5;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display:flex;
+}
+
+textarea {
+    width: 49.30vw;
+    height: 60.93vh;
+    margin-left: 14.58vw;
+    margin-right: 5.55vw;
+    margin-bottom: 6.05vh;
+    padding-left: 2.08vw;
+    padding-top: 2.92vh;
+    font-size: 32px;
+    font-weight: 400;
+    font-family: "Inter";
+    color: #0A3871;
+    background-color: #E5E5E5;
+    border: none;
+}
+
+textarea::placeholder {
+    color: #0A3871;
+}
+
+.main__main-text {
+    height: 100%;
+    width: 100%;
+}
+
+.main__main-text__logo {
+    margin-left: 2.77vw;
+    margin-top: 3.90vh;
+    margin-bottom: 6.15vh;
+}
+
+.main__main-text__logo__logo-desktop {
+    display: block;
+}
+
+.main__main-text__logo__logo-mobile {
+    display: none;
+}
+
+.main__main-text__bottom {
+    margin-left: 16.66vw;
+    margin-bottom: 7.03vh;
+}
+
+.main__main-text__bottom__icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.46vh;
+}
+
+.main__main-text__bottom__icon__text {
+    padding-left: 0.55vw;
+    font-size: 12px;
+    font-family: "Inter";
+    font-weight: 400;
+    color: grey;
+}
+
+.main__main-text__bottom__buttons button {
+    width: 22.77vw;
+    height: 6.54vh;
+    border-radius: 24px;
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #00008B;
+}
+
+.main__main-text__bottom_buttons__button-encrypt {
+    background-color: #00008B;
+    color: white;
+    margin-right: 1.66vw;
+}
+
+.main__main-text__bottom_buttons__button-encrypt:hover {
+    background-color: #00004a;
+}
+
+.main__main-text__bottom_buttons__button-decrypt {
+    color: #00008B;
+}
+
+.main__main-text__bottom_buttons__button-decrypt:hover {
+    color: #00004a;
+    background-color: #8886860a;
+}
+
+.main__encrypted-text {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 27.77vw;
+    height: 92.18vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 2.77vw;
+    text-align: center;
+    border-radius: 32px;
+    box-shadow: 20px 20px 10px -2px rgb(209, 209, 209);
+}
+
+.main__encrypted-text img {
+    width: 85%;
+    height: auto;
+}
+
+.main__encrypted-text__title {
+    font-family: "Inter";
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.main__encrypted-text__paragraph {
+    font-family: "Inter";
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.main__visual-encrypted-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 27.77vw;
+    height: 92.18vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 2.77vw;
+    text-align: center;
+    border-radius: 32px;
+    box-shadow: 20px 20px 10px -2px rgb(209, 209, 209);
+}
+
+.main__visual-encrypted-text__paragraph {
+    font-family: "Inter";
+    font-size: 1.5em;
+    font-weight: 400;
+    width: 84%;
+    height: 82.73%;
+}
+
+#copy-button {
+    width: 84%;
+    height: 7.09%;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    color: #00004a;
+    background-color: white;
+    border: 1px solid #00008B;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+#copy-button:hover {
+    color: #00004a;
+    background-color: #8886860a;
+}
+
+/*Media Quearies for tablets*/
+
+@media (max-width: 768px) {
+    main {
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    textarea {
+        width: 90.49vw;
+        height: 46.33vh;
+        padding-left: 2.08vw;
+        padding-top: 0;
+        margin-left: 2.99vw;
+        margin-right: auto;
+        margin-bottom: 4.51vh;
+        }
+
+    .main__main-text {
+        height: 100%;
+        width: 100%;
+    }
+
+    .main__main-text__logo {
+        margin-left: 5.20vw;
+        margin-top: 6.21vh;
+        margin-bottom: 9.79vh;
+    }
+    
+    .main__main-text__logo__logo-desktop {
+        display: none;
+    }
+
+    .main__main-text__logo__logo-mobile {
+        display: block;
+    }
+
+    .main__main-text__bottom {
+        margin-left: 5.20vw;
+        margin-bottom: 5.36vh;
+        }
+
+    .main__main-text__bottom__buttons button {
+        width: 43.22vw;
+        height: 8vh;
+        border-radius: 24px;
+        font-family: "Inter";
+        font-size: 16px;
+        font-weight: 400;
+        border: 1px solid #00008B;
+    }
+
+    .main__main-text__bottom_buttons__button-encrypt {
+        background-color: #00008B;
+        color: white;
+        margin-right: 1.66vw;
+    }
+
+    .main__encrypted-text {
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 89.58vw;
+        height: 15vh;
+        margin-left: 5.20vw;
+        margin-bottom: 3.40vh;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .main__encrypted-text__title, 
+    .main__encrypted-text__paragraph {
+        margin: 0;
+        padding: 0;
+    }
+
+    .main__encrypted-text img {
+        display: none;
+    }
+}
+
+/*Media Quearies for mobiles*/
+
+@media (max-width: 375px) {
+    textarea {
+        width: 92.26vw;
+        height: 29.90vh;
+        margin-left: 2.66vw;
+        margin-right: auto;
+        margin-bottom: 2.57vh;
+        padding-left: 2.08vw;
+        padding-top: 2.92vh;
+        font-size: 32px;
+        font-weight: 400;
+        font-family: "Inter";
+        color: #0A3871;
+        background-color: #E5E5E5;
+        border: none;
+    }
+
+    .main__main-text__logo {
+        margin-left: 4.26vw;
+        margin-top: 2.57vh;
+        margin-bottom: 8.57vh;
+    }
+
+    .main__main-text__bottom {
+        margin-left: 4.26vw;
+        margin-bottom: 6.85vh;
+    }
+
+    .main__main-text__bottom__icon {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.71vh;
+    }
+
+    .main__main-text__bottom__buttons button {
+        width: 91.46vw;
+        height: 7.18vh;
+        border-radius: 24px;
+        font-family: "Inter";
+        font-size: 16px;
+        font-weight: 400;
+        border: 1px solid #00008B;
+    }
+
+    .main__main-text__bottom_buttons__button-encrypt {
+        background-color: #00008B;
+        color: white;
+        margin-bottom: 2.57vh;
+    }
+
+    .main__encrypted-text {
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 87.2vw;
+        height: 19.93vh;
+        box-sizing: border-box;
+        padding: 2em;
+        margin-left: 6.4vw;
+        margin-bottom: 4.28vh;
+        margin-right: 6.4vw;
+        margin-top: 0;
+    }
+}
+
